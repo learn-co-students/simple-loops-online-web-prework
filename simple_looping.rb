@@ -53,7 +53,7 @@ def for_iterator(number_of_times)
   phrase = "Welcome to Flatiron School's Web Development Course!"
 # countdown3.rb
 
-range = to_number_of_times
+range = number_of_times
 
 for number_of_times in 1..range do
   puts phrase
