@@ -53,7 +53,7 @@ def for_iterator(number_of_times)
   phrase = "Welcome to Flatiron School's Web Development Course!"
 # countdown3.rb
 
-x = gets.chomp.to_i
+range = gets.chomp.to_number_of_times
 
 for i in 1..x do
   puts i
