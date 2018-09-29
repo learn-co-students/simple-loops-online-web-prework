@@ -55,7 +55,7 @@ def for_iterator(number_of_times)
 
 range = gets.chomp.to_number_of_times
 
-for number_of_times in 1..x do
+for number_of_times in 1..range do
   puts i
 end
 end
