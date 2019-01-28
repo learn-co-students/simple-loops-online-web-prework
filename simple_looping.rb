@@ -2,6 +2,10 @@
 
 def loop_iterator(number_of_times)
   # Code your solution here using the "loop" keyword to puts out the below phrase
+  loop do
+    puts "Welcome to Flatiron School's Web Development Course!"
+    end 
+  end
   # This and all the other methods take an argument of an integer 
   # The integer is the number of times the loops should puts out the phrase
   # How can we make sure the loop breaks once it has puts out the phrase the 
