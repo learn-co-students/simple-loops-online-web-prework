@@ -1,6 +1,8 @@
 # REMEMBER: print your output to the terminal using 'puts'
 
 def loop_iterator(number_of_times)
+  for number_of_times in 1..100 do 
+    puts "Welcome to Flatiron School's Web Development Course!" 
   # Code your solution here using the "loop" keyword to puts out the below phrase
   # This and all the other methods take an argument of an integer 
   # The integer is the number of times the loops should puts out the phrase
@@ -19,6 +21,10 @@ def times_iterator(number_of_times)
 end
 
 def while_iterator(number_of_times)
+  x = 100 
+  while x > 0 
+  x -= 1 
+  puts "This loop will run #{x} more times"
   # code your solution here using the "while" keyword
   # hint: user a counter to tell the while loop when to stop!
   phrase = "Welcome to Flatiron School's Web Development Course!"
@@ -26,6 +32,11 @@ def while_iterator(number_of_times)
 end
 
 def until_iterator(number_of_times)
+  i = 0 
+  until i == 5 
+  puts i 
+  i += 1 
+end
   # code your solution here using the "until" keyword
   # hint: use a counter to tell the until loop when to stop!
   phrase = "Welcome to Flatiron School's Web Development Course!"
@@ -33,6 +44,8 @@ def until_iterator(number_of_times)
 end
 
 def for_iterator(number_of_times)
+  for number_of_times in 1..10 do
+   
   # code your solution here using the "for" keyword
   # remember that `for` requires a range of numbers. How can we turn our number into a range?
   
