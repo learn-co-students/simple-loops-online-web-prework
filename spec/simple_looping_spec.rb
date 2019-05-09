@@ -1,37 +1,30 @@
 require_relative './spec_helper'
 
-describe 'Loops' do
-  before(:each) do
-    @looping_string = "Welcome to Flatiron School's Web Development Course!\nWelcome to Flatiron School's Web Development Course!\nWelcome to Flatiron School's Web Development Course!\nWelcome to Flatiron School's Web Development Course!\nWelcome to Flatiron School's Web Development Course!\nWelcome to Flatiron School's Web Development Course!\nWelcome to Flatiron School's Web Development Course!\n"
-  end
 
-  describe 'loop' do
-    it "prints out Welcome to Flatiron School\'s Web Development Course! 7 times" do
-      expect{ loop_iterator(7) }.to output(@looping_string).to_stdout
-    end
-  end
 
-  describe 'times' do
-    it "prints out Welcome to Flatiron School\'s Web Development Course! 7 times" do
-      expect{ times_iterator(7) }.to output(@looping_string).to_stdout
-    end
-  end
+loop do
+  puts "Welcome to Flatiron School's Web Development Course!"
+  break #7
+ end
 
-  describe 'while' do
-    it 'prints out Welcome to Flatiron School\'s Web Development Course! 7 times' do
-      expect{ while_iterator(7) }.to output(@looping_string).to_stdout
+  7.times do
+    puts "Welcome to Flatiron School's Web Development Course!"
     end
-  end
 
-  describe 'until' do
-    it "prints out Welcome to Flatiron School\'s Web Development Course! 7 times" do
-      expect{ until_iterator(7) }.to output(@looping_string).to_stdout
-    end
-  end
+welcome_to_flatiron = 0
+ while welcome_to_flatiron <7
+  puts "Welcome to Flatiron School's Web Development Course! #{welcome_to_flatiron}"
+  welcome_to_flatiron += 1
 
-  describe 'for' do
-    it "prints out Welcome to Flatiron School\'s Web Development Course! 7 times" do
-      expect{ for_iterator(7) }.to output(@looping_string).to_stdout
-    end
-  end
+counter = 0
+until counter == 7
+  puts "prints out Welcome to Flatiron School's Web Development Course!"
+  counter += 1
+ end
+
+def welcome_to_flatiron 7
+
+for welcome in welcome_to_flatiron
+  puts "Welcome to Flatiron School's Web Development Course!"
+ end
 end
