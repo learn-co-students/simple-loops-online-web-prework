@@ -1,23 +1,22 @@
 # REMEMBER: print your output to the terminal using 'puts'require pry
-
-```def loops(number = 7)
-  looping_string = "Welcome to Flatiron School's Web Development Course!"
-  number = 0 
+def loops(number)
+  looping_string = "#{"Welcome to Flatiron School's Web Development Course!"}"
+  number_start = 0 
     loop do
-     puts "#{looping_string}" 
-      number = number += 1
-     break if number_of_times == 7
+      puts "#{looping_string}"
+      number_start = number_start += 1
+     break if number_of_times == number
    end 
 end
 
 
-def loop_iterator(number = 7)
-  loop do 
-    looping_string = "Welcome to Flatiron School's Web Development Course!"
-    number = 0 
-     puts  "#{looping_string}" 
-      number = number += 1
-     break if number == 7 
+def loop_iterator(number)
+  looping_string = "Welcome to Flatiron School's Web Development Course!"
+    number_start = 0 
+    loop do 
+      puts  "#{looping_string}" 
+      number_start = number_start += 1
+     break if number_start == number 
   end
 end 
 
@@ -28,26 +27,23 @@ def times_iterator(number_of_times)
   end
 end 
 
-def while_iterator(number = 7)
+def while_iterator(number)
 looping_string = "Welcome to Flatiron School's Web Development Course!"
-number = 0
-  while number <= 7
+  number_start = 0
+  while number_start <= number
    puts "#{looping_string}"
-   number = number += 1
-   break if number == 7
+   number_start = number_start += 1
+   break if number_start == number
   end
-  # code your solution here using the "while" keyword
-  # hint: user a counter to tell the while loop when to stop!
 end
 
 
-def until_iterator(number = 7)
+def until_iterator(number)
 looping_string = "Welcome to Flatiron School's Web Development Course!"
-number = 0
-
-   until  number == 7
+  number_start = 0
+  until  number_start == number
     puts "#{looping_string}" 
-    number += 1
+    number_start += 1
    end
 end
 
