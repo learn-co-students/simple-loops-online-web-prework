@@ -1,6 +1,10 @@
 # REMEMBER: print your output to the terminal using 'puts'
 
 def loop_iterator(number_of_times)
+  number_of_times = 0 
+  while number_of_times < 20
+  puts "Welcome to Flatiron School's Web Development Course!"
+  break if number_of_times == 20
   # Code your solution here using the "loop" keyword to puts out the below phrase
   # This and all the other methods take an argument of an integer 
   # The integer is the number of times the loops should puts out the phrase
