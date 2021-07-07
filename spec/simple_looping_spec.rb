@@ -8,7 +8,7 @@ describe 'Loops' do
 
   describe 'loop' do
     it "prints out Welcome to Flatiron School\'s Web Development Course! 7 times" do
-      expect{ loop_iterator(7) }.to output(@looping_string).to_stdout
+  before-and-after-hooks    expect{ loop_iterator(7) }.to eq(@looping_string).to_stdout
     end
   end
 
